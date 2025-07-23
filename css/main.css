@@ -48,4 +48,155 @@
       text-align: center;
     }
   }
+  .sticky-button {
+    position: fixed;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    z-index: 1050;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    background-color: #f32f53fe;
+    color: white;
+  }
+  .sticky-button:hover{
+    background-color: green;
+  }
+  .sticky-button-png {
+    position: fixed;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    z-index: 1050;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    /* background-color: #f2f2f2fe; */
+    color: white;
+    /* border: 1px solid #f32f53fe; */
+  }
+ 
+  .btn-close{
+    border: 1px solid #f32f53fe;
+    padding: 13px !important;   
+  }
+  /* dg group responsive chattbot area */
+    
+.chatbot {
+  border-top: 2px solid white;
+}
 
+.chatbot {
+  position: fixed;
+  font-size: 0.8em;
+  padding: 0px;
+  margin: 0;
+  color: white;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 100;
+}
+
+.chatbot button {
+  background: linear-gradient(90deg, #bc128a 10%, #f48629 100%);
+  border: none;
+  outline: none;
+  width: calc(32%);
+  border-left: 2px solid lightgrey;
+  font-size: 3.3vw;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+  flex: 1;
+  box-sizing: border-box;
+  display: inline;
+  text-decoration: none;
+}
+
+.chatbot button:first-of-type {
+  border-left: none;
+}
+
+.chatbot button a {
+  text-decoration: none;
+  color: white;
+  ;
+}
+
+.chatbotdecor {
+  border: 2px solid white;
+  background: linear-gradient(90deg, #bc128a 10%, #f48629 100%);
+
+}
+
+.chatbot {
+  display: none;
+}
+
+.chatbotMenuBut {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 100px;
+  font-size: 2em;
+  background: linear-gradient(90deg, #bc128a 10%, #f48629 100%);
+  color: white;
+  border: none;
+  outline: none;
+  position: absolute;
+  margin-top: -20px;
+}
+
+.chatbotMenuBut button {
+  color: white;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  line-height: 50px;
+  text-align: center;
+}
+
+.mob_menu_id {
+  display: none;
+}
+
+
+.chatbotMenuBut:nth-of-type(2) {
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .chatbot {
+      display: block;
+  }
+  .whatsapp-icon{
+  display: none;
+  }
+  .pt-100 {
+    padding-top: 50px;
+}
+.card-style {
+   margin-top: 0;
+    padding: 15px;
+ 
+}
+}
+
+.chatbot {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  height: 3.5em;
+  color: white;
+  background: linear-gradient(90deg, #bc128a 10%, #f48629 100%);
+}
+:root {
+  --main: rgba(1, 68, 107, 0.6);
+  --dark-main: #004c3f;
+}

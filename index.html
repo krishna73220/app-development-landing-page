@@ -182,7 +182,8 @@
 
 					<!-- Get application button -->
 					<li class="nav-item d-none d-sm-block ms-2">
-						<button class="btn btn-sm btn-dark mb-0">Get Started</button>
+						<button class="btn btn-sm btn-dark mb-0" data-bs-toggle="modal"
+							data-bs-target="#contactModal">Get Started</button>
 					</li>
 
 					<!-- Responsive navbar toggler -->
@@ -204,12 +205,7 @@
 		<!-- Nav END -->
 	</header>
 	<!-- Header END -->
-
-	<!-- **************** MAIN CONTENT START **************** -->
 	<main>
-
-		<!-- =======================
-Main Banner START -->
 		<section class="overflow-hidden pt-lg-9" id="home">
 			<div class="container position-relative pt-4 pt-sm-6">
 				<div class="row">
@@ -1163,7 +1159,7 @@ CTA END -->
 									</form>
 								</div>
 							</div>
-							<div class="col-12 col-lg-6 mx-auto"  >
+							<div class="col-12 col-lg-6 mx-auto">
 								<div class="card card-body bg-light border p-sm-5" style="height: 100% !important;">
 									<h4 class="my-5">Office Address</h4>
 									<!-- Office item -->
@@ -1190,9 +1186,9 @@ CTA END -->
 													aria-hidden="true"></i>contact@devoutgrowth.com</a></li>
 									</ul>
 									<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.841746763106!2d77.64476770000002!3d12.9178909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae157ea60fa089%3A0xbc91c1203566fc30!2sDevout%20Growth!5e0!3m2!1sen!2sin!4v1741349511233!5m2!1sen!2sin"
-									width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade"></iframe>
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.841746763106!2d77.64476770000002!3d12.9178909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae157ea60fa089%3A0xbc91c1203566fc30!2sDevout%20Growth!5e0!3m2!1sen!2sin!4v1741349511233!5m2!1sen!2sin"
+										width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 
 
@@ -1207,8 +1203,76 @@ CTA END -->
 
 	</main>
 	<!-- **************** MAIN CONTENT END **************** -->
+	<!-- <button id="stickyBtn" class="btn sticky-button" data-bs-toggle="modal" data-bs-target="#contactModal">
+		Contact Us
+	</button> -->
+	<button id="stickyBtn" class="btn sticky-button-png" data-bs-toggle="modal" data-bs-target="#contactModal">
+		<img src="imgs/inquiry.png" alt="">
+	</button>
+	<!-- Modal -->
+	<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+				<div class="card shadow p-4 p-sm-5 ">
+					<!-- Card header -->
+					<div class="card-header px-0 modal-header ">
+						<!-- Title -->
+						<h4 class="my-0 py-0 pb-3">Contact <span class="pink">Us</span></h4>
+						<button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
 
+					</div>
+					<!-- Card body & form -->
+					<form class="card-body- px-0 pb-0 p-0">
+						<!-- Name -->
+						<div class="input-floating-label form-floating mb-4">
+							<input type="text" class="form-control bg-transparent" id="floatingName"
+								placeholder="Password">
+							<label for="floatingName">Your name</label>
+						</div>
+						<!-- Email -->
+						<div class="input-floating-label form-floating mb-4">
+							<input type="email" class="form-control bg-transparent" id="floatingInput"
+								placeholder="name@example.com">
+							<label for="floatingInput">Email address</label>
+						</div>
+						<!-- Number -->
+						<div class="input-floating-label form-floating mb-4">
+							<input type="text" class="form-control bg-transparent" id="floatingNumber"
+								placeholder="Password">
+							<label for="floatingNumber">Phone number</label>
+						</div>
+						<!-- Message -->
+						<div class="input-floating-label form-floating mb-4">
+							<textarea class="form-control bg-transparent" placeholder="Leave a comment here"
+								id="floatingTextarea2" style="height: 100px"></textarea>
+							<label for="floatingTextarea2">Message</label>
+						</div>						
+					</form>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="submit" form="contactForm" class="btn btn-primary">Submit</button>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
+	  <div class="chatbot">
+        <button>
+            <a href="https://wa.me/+917368083688?text=I%20want%20to%20know%20about%20DG%20Digital%20Services!">Whatsapp
+                Now<i class="fab fa-whatsapp" style="margin-left: 10px"></i></a>
+        </button>
+        <button>
+            <a href="mailto:contact@devoutgrowth.com">Mail Us<i class="fa fa-envelope" style="margin-left: 10px"></i></a>
+        </button>
+        <button>
+            <a href="#banner" style="padding-left: 10px">Request a callback</a>
+        </button>
+    </div>
 	<!-- =======================
+	 
 Footer START -->
 	<footer>
 		<div class="container-k">
@@ -1235,15 +1299,20 @@ Footer START -->
 						</ul>
 						<!-- Social media button -->
 						<ul class="list-inline mb-0 mt-4">
-							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-facebook" href="https://www.facebook.com/devoutgrowth"><i
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-facebook"
+									href="https://www.facebook.com/devoutgrowth"><i
 										class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-instagram" href="https://www.instagram.com/devoutgrowth"><i
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-instagram"
+									href="https://www.instagram.com/devoutgrowth"><i
 										class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-twitter" href="https://x.com/Devoutgrowth"><i
-										class="fab fa-fw fa-twitter lh-base"></i></a> </li>
-							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-linkedin" href="https://www.linkedin.com/company/devout-growth-digital"><i
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-twitter"
+									href="https://x.com/Devoutgrowth"><i class="fab fa-fw fa-twitter lh-base"></i></a>
+							</li>
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-linkedin"
+									href="https://www.linkedin.com/company/devout-growth-digital"><i
 										class="fab fa-fw fa-linkedin-in lh-base"></i></a> </li>
-							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-youtube" href="http://www.youtube.com/@devoutgrowth"><i
+							<li class="list-inline-item"> <a class="btn btn-xs btn-icon bg-youtube"
+									href="http://www.youtube.com/@devoutgrowth"><i
 										class="fab fa-fw fa-youtube lh-base"></i></a> </li>
 						</ul>
 						<!-- copyright text -->
@@ -1256,6 +1325,7 @@ Footer START -->
 	</footer>
 	<!-- =======================
 Footer END -->
+
 
 	<!-- Back to top -->
 	<div class="back-top"></div>
@@ -1271,6 +1341,12 @@ Footer END -->
 	<!-- Theme Functions -->
 	<script src="js/functions.js"></script>
 
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var myModal = new bootstrap.Modal(document.getElementById('contactModal'));
+			myModal.show();
+		});
+	</script>
 
 </body>
 

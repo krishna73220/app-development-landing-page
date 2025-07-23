@@ -200,3 +200,19 @@
   --main: rgba(1, 68, 107, 0.6);
   --dark-main: #004c3f;
 }
+.auto-scale-img {
+  animation: pulseScale 2s infinite ease-in-out;
+}
+
+@keyframes pulseScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
